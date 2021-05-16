@@ -11,7 +11,13 @@ https://tailwindcss.com/docs/installation
 
 How to build CSS:
 
-	npx postcss styles.css -o compiled.css
+	npm run compile
 
 NOTE: This is the most basic TW project setup. It uses the `postcss-cli`
 tool to compile the `styles.css` as source and output the `compiled.css` output.
+
+How to preview index.html:
+
+	php -S localhost:3000
+	open http://localhost:3000
+	
