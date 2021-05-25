@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AlpineJS</title>
+  <script src="https://unpkg.com/alpinejs@2.8.2/dist/alpine.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.1.2/dist/tailwind.min.css">
+</head>
+<body>
+
+<div id="app" x-data="{colTemplate: ['A', 'B', 'C', 'D', 'E']}">
+  <table class="table w-full">
+    <template x-for="row in 100">
+      <tr>
+        <td><span x-text="row"></span></td>
+        <template x-for="col in 5">
+          <td><span x-text="colTemplate[col - 1]"></span></td>
+        </template>
+      </tr>
+    </template>
+  </table>
+</div>
+
+</body>
+</html>
