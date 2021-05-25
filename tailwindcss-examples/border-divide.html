@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TailwindCSS</title>
+
+  <link rel="icon" href="../favicon.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.1.2/dist/tailwind.min.css">
+</head>
+<body>
+
+<!--
+The "divide-x/y" would work without the "border" utility!
+-->
+<div class="container m-5 mx-auto">
+  <div class="divide-y divide-gray-400">
+    <div class="text-center py-2">1</div>
+    <div class="text-center py-2">2</div>
+    <div class="text-center py-2">3</div>
+  </div>
+</div>
+
+<p class="mt-20"></p>
+<div class="container m-5 mx-auto">
+  <div class="flex flex-col-reverse divide-y divide-y-reverse divide-gray-400">
+    <div class="text-center py-2">1</div>
+    <div class="text-center py-2">2</div>
+    <div class="text-center py-2">3</div>
+  </div>
+</div>
+
+<p class="mt-20"></p>
+<div class="container m-5 mx-auto">
+  <div class="grid grid-cols-3 divide-x divide-gray-400">
+    <div class="text-center">1</div>
+    <div class="text-center">2</div>
+    <div class="text-center">3</div>
+  </div>
+</div>
+
+<hr>
+<div class="container m-5 mx-auto">
+  <div class="flex flex-col border divide-y">
+    <div class="flex-auto">
+      A
+    </div>
+    <div class="flex-auto">
+      A
+    </div>
+    <div class="flex-auto">
+      A
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

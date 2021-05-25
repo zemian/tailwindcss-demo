@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TailwindCSS</title>
+
+  <link rel="icon" href="../favicon.svg" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.1.2/dist/tailwind.min.css">
+</head>
+<body>
+
+<style>
+  /*
+  Plain CSS : https://www.w3schools.com/howto/howto_css_center-vertical.asp
+  More example here: https://stackoverflow.com/questions/37622753/translatey-vertical-center-method-not-working-slightly-off-center
+
+  How it works:
+  The "top: 50%" move the element starting in center of the container, so it is off by the element (text line) height
+  Then, the "transform: translateY" will move half of the element height backup.
+   */
+  .container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+</style>
+
+<div class="container">
+  <div class="vertical-center">
+    <p>I am vertically centered.</p>
+  </div>
+</div>
+
+</body>
+</html>
